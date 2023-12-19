@@ -46,6 +46,10 @@ Route::prefix('master')->name('master.')->group(function(){
     Route::patch('supplier/update/{id}', [SupplierController::class, 'update'])->name('supplier-update');
 });
 
+Route::prefix('laporan')->name('laporan.')->group(function(){
+
+});
+
 Route::prefix('transaksi')->name('transaksi.')->group(function(){
 
     //pembelian produk
